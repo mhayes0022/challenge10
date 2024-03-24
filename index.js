@@ -1,7 +1,7 @@
 //runs the application w/ input from .lib/
 const inquirer = require('inquirer');
 const fs = require('fs');
-//should be a third to connect shapes.js
+const {Circle, Triangle, Square} = require("./lib/shapes.js");
 
 
 const questions = [
@@ -38,3 +38,7 @@ function writeToFile(fileName, data) {
         }
     })
 };
+
+const answers = await inquirer.prompt(questions);
+
+//Going to need to write an html file to put logo into?

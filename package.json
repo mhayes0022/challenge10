@@ -1,5 +1,5 @@
 {
-    "name": "logo-svg",
+    "name": "list-geni",
     "version": "1.0.0",
     "description": "A command line logo generator. Input the shape, color, and initials to gnerate a logo.",
     "main": "index.js",
