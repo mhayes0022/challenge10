@@ -50,13 +50,13 @@ async function createLogo() {
     let logo;
 
     if (answers.shape === "Triangle") {
-        logo = new Triangle(answers.text, answers.textColor, answers.shapeColor);
+        logo = new Triangle(answers.shapeColor, answers.textColor, answers.text);
     }
     else if (answers.shape === "Circle") {
-        logo = new Circle(answers.text, answers.textColor, answers.shapeColor);
+        logo = new Circle(answers.shapeColor, answers.textColor, answers.text);
     }
     else {
-        logo = new Square(answers.text, answers.textColor, answers.shapeColor);
+        logo = new Square(answers.shapeColor, answers.textColor, answers.text);
     }
 
     const svgString = logo.render();
